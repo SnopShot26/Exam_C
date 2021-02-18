@@ -637,14 +637,72 @@ class Program {
 
 Коллекции
 80) Какие необобщенные (non-generic) коллекции вы знаете?
+{
+ // no generic collections
+            // ArrayList
+            // SortedList
+            // Stack
+            // Queue
+            // BitArray
+            // Hashtable
+}
 81) Какие обобщенные (generic) коллекции вы знаете?
+{
+ // generic collections
+            // List<T>
+            // LinkedList<T>
+            // ObservableCollection<T>
+            // Queue<T>
+            // Stack<T>
+            // SortedList<K, V>
+            // SortedSet<T>
+            // SortedDictionary<K, V>
+            // HashSet<T>
+            // Dictionary<K,V>
+            // KeyValuePair<K,V>
+            // Tuple<T...>
+}
 82) В чем преимущества обобщенных (generic) коллекций над необобщенными (non-generic)?
+{ 
+ в том что в generic колекции могут работать со всеми типами данных и классами
+}
 83) В чем разница между интерфейсами IEnumerable<T> и IEnumerator<T>?
+{
+ IEnumerable<T> это интерфейс для класса или структуры в котором будет класс с интерфейсом IEnumerator<T>
+ это всё нужно чтобы класс можно было перебирать класс
+}
 84) Что такое ObservableCollection<T>? В чем отличие от List<T>?
+{
+ лист эвентов 
+ например вы добавили в него item и он это замечает и говорит об этом
+}
 85) Что такое IReadOnlyCollection<T> и IReadOnlyDictionary<T>?
+{
+ колекция в которую можно передать значение только один раз при конструкторе 
+}
 86) В чем разница между IEnumerable<T>, ICollection<T> и IDictionary<K, V>?
+{
+ IEnumerable<T> говорит что его можно переберать
+ ICollection<T> говорит что это колекция где можно хранить что-то
+ IDictionary<K, V> говорит что это колекция хранящая ключ значение
+}
 87) В каких ситуациях следует использовать List<T>, LinkedList<T>, HashSet<T>,SortedSet<T>?
+{
+ List<T> при малом количестве данных обычный вектор
+ 
+ LinkedList<T> это колекция работающия через узлы и когда мы добовляем в него новый item 
+ то он не пересоздаёт массив а просто создаёт новый узел и и привязывает его
+ 
+ HashSet<T> это хэш таблица используйте его при большом количестве данных 
+ 
+ SortedSet<T> сортированая хэш таблица
+}
 88) В чем отличие Dictionary<K,V>, SortedDictionary<K,V> и SortedList<K,V>?
+{
+ Dictionary<K,V> ключ значение 
+ SortedDictionary<K,V> тоже самое только сортированый 
+ SortedList<K,V> работает как лист но сортирует по ключам
+}
 
 Сборщик мусора (Garbage Collector)
 89) Объясните принцип хранения объектов в памяти.
